@@ -14,9 +14,9 @@ class User(db.Model):
         String(50), unique=True, nullable=False)
     password_hash:  Mapped[str] = mapped_column(String(255), nullable=False)
    
-    def __init__(self, username, password, role):
+    def __init__(self, username, password, email):
         self.username = username
-        self.role = role
+        self.email= email 
         self.set_password(password)
 
     def set_password(self, password):
