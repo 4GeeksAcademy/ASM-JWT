@@ -20,7 +20,7 @@ import { Private } from "./pages/Private";
 // import { useContext } from "react";
 // import useGlobalReducer from "./hooks/useGlobalReducer";
 
-// Componente de ruta protegida simplificado que solo usa sessionStorage
+
 const ProtectedRoute = ({ children }) => {
   const token = sessionStorage.getItem('token');
   

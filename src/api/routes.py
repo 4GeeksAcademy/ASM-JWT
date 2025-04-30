@@ -76,7 +76,6 @@ def login():
     if not data.get('email') or not data.get('password'):
         return jsonify({"message": "Faltan datos requeridos"}), 400
     
-    #
     user = User.query.filter_by(email=data['email']).first()
     
     if not user or not user.check_password(data['password']):

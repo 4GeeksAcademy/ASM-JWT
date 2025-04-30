@@ -14,7 +14,7 @@ export const Private = () => {
         return;
       }
       
-      // Validar el token con el backend
+      
       const isValid = await validateToken(store.auth.token, dispatch);
       
       if (!isValid) {
@@ -25,7 +25,7 @@ export const Private = () => {
     checkAuth();
   }, [store.auth?.token, dispatch, navigate]);
   
-  // Si no hay usuario autenticado, mostrar cargando
+ 
   if (!store.auth?.user) {
     return (
       <div className="container mt-5 text-center">

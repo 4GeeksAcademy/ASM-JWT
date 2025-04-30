@@ -16,12 +16,11 @@ export const Signup = () => {
   
   const [formErrors, setFormErrors] = useState({});
   
-  // Agregar optional chaining para prevenir errores
   useEffect(() => {
     if (store.auth?.token && store.auth?.user) {
       navigate("/private");
     }
-  }, [store.auth?.token, store.auth?.user, navigate]);
+  }, [store.auth?.token, store.auth?.user, navigate]); // eso de aqui me lo recomendó el chat por si no existia 
   
   const handleChange = (e) => {
     const { name, value } = e.target;
