@@ -1,10 +1,10 @@
-import React, { useState, useContext, useEffect } from "react";
-import { Context } from "../store/appContext";
-import { signupUser } from "../store/store";
+import React, { useState, useEffect } from "react";
+import useGlobalReducer from "../hooks/useGlobalReducer";
+import { signupUser } from "../store";
 import { useNavigate } from "react-router-dom";
 
 export const Signup = () => {
-  const { store, dispatch } = useContext(Context);
+  const { store, dispatch } = useGlobalReducer();
   const navigate = useNavigate();
   
   const [formData, setFormData] = useState({
@@ -16,12 +16,12 @@ export const Signup = () => {
   
   const [formErrors, setFormErrors] = useState({});
   
-  
+  // Agregar optional chaining para prevenir errores
   useEffect(() => {
-    if (store.auth.token && store.auth.user) {
+    if (store.auth?.token && store.auth?.user) {
       navigate("/private");
     }
-  }, [store.auth.token, store.auth.user, navigate]);
+  }, [store.auth?.token, store.auth?.user, navigate]);
   
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,7 +29,6 @@ export const Signup = () => {
       ...formData,
       [name]: value
     });
-    
     
     if (formErrors[name]) {
       setFormErrors({
@@ -43,7 +42,6 @@ export const Signup = () => {
     let errors = {};
     let isValid = true;
     
-    
     if (!formData.email) {
       errors.email = "El correo electrónico es obligatorio";
       isValid = false;
@@ -52,7 +50,6 @@ export const Signup = () => {
       isValid = false;
     }
     
-   
     if (!formData.username) {
       errors.username = "El nombre de usuario es obligatorio";
       isValid = false;
@@ -61,7 +58,6 @@ export const Signup = () => {
       isValid = false;
     }
     
-    // Validar password
     if (!formData.password) {
       errors.password = "La contraseña es obligatoria";
       isValid = false;
@@ -70,7 +66,6 @@ export const Signup = () => {
       isValid = false;
     }
     
- 
     if (formData.password !== formData.confirmPassword) {
       errors.confirmPassword = "Las contraseñas no coinciden";
       isValid = false;
@@ -84,7 +79,6 @@ export const Signup = () => {
     e.preventDefault();
     
     if (validateForm()) {
-
       const { confirmPassword, ...userData } = formData;
       
       const success = await signupUser(userData, dispatch);
@@ -104,7 +98,7 @@ export const Signup = () => {
               <h4 className="mb-0">Registro de Usuario</h4>
             </div>
             <div className="card-body">
-              {store.auth.error && (
+              {store.auth?.error && (
                 <div className="alert alert-danger" role="alert">
                   {store.auth.error}
                 </div>
@@ -187,9 +181,9 @@ export const Signup = () => {
                   <button
                     type="submit"
                     className="btn btn-primary"
-                    disabled={store.auth.loading}
+                    disabled={store.auth?.loading}
                   >
-                    {store.auth.loading ? "Registrando..." : "Registrarme"}
+                    {store.auth?.loading ? "Registrando..." : "Registrarme"}
                   </button>
                 </div>
               </form>

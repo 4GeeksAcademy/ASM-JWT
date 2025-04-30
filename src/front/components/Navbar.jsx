@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Context } from "../store/appContext";
-import { logoutUser } from "../store/store";
+import useGlobalReducer from "../hooks/useGlobalReducer";
+import { logoutUser } from "../store";
 
 export const Navbar = () => {
-	const { store, dispatch } = useContext(Context);
+	const { store, dispatch } = useGlobalReducer();
 	const navigate = useNavigate();
 	
 	const handleLogout = () => {
@@ -19,7 +19,7 @@ export const Navbar = () => {
 					<span className="navbar-brand mb-0 h1">Mi Aplicación</span>
 				</Link>
 				<div className="ml-auto">
-					{!store.auth.user ? (
+					{!store.auth?.user ? (
 						<>
 							<Link to="/login">
 								<button className="btn btn-primary me-2">Iniciar Sesión</button>
