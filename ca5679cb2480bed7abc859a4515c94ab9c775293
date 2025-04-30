@@ -1,0 +1,248 @@
+[33mcommit ca5679cb2480bed7abc859a4515c94ab9c775293[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ángel Sánchez Moreno <univ.angel97@gmail.com>
+Date:   Wed Apr 30 20:19:34 2025 +0000
+
+    Store.js configurado y listo para su uso
+
+[33mcommit 7d09d0a4c29eaa1c513aa9a1bfc2b0ae9ba398e1[m
+Author: Ángel Sánchez Moreno <univ.angel97@gmail.com>
+Date:   Wed Apr 30 20:08:20 2025 +0000
+
+    error en el init de user corregido
+
+[33mcommit 8fe439e3558bc68745c8ac0c831a4da0280c005b[m
+Author: Ángel Sánchez Moreno <univ.angel97@gmail.com>
+Date:   Wed Apr 30 19:56:37 2025 +0000
+
+    rutas finalizadas en routes.py
+
+[33mcommit 11bda26b651b89b14050fa5b911d065ccf74a594[m
+Author: Ángel Sánchez Moreno <univ.angel97@gmail.com>
+Date:   Wed Apr 30 15:46:54 2025 +0000
+
+    tabla User creada
+
+[33mcommit 88c850daf574592606c9f003b5e2be23fd1cffa4[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 25 15:15:56 2025 +0000
+
+    update devcontainer
+
+[33mcommit 5268ef80025380e02fe203e571f38feafd82bce8[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 25 14:47:54 2025 +0000
+
+    update python version
+
+[33mcommit 3cfbf035e1c747c0a3b73b3f37e693ac307c9b85[m
+Merge: 5ede340 3f9fa31
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Sun Feb 23 13:09:48 2025 -0300
+
+    Merge pull request #1 from dotfortun/patch-1
+    
+    Added autopep8 and prettier to template.
+
+[33mcommit 5ede340ea0b9a9803212bff22e97ef4b32b05a48[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Fri Feb 21 20:28:46 2025 +0000
+
+    update loadMessage function
+
+[33mcommit dbd9a9685d257e47fc0587183ff62fdae375bcf6[m
+Merge: c22bd3b 5936b76
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Fri Feb 21 16:37:42 2025 -0300
+
+    Merge pull request #4 from SamuelCarmona83/main
+    
+    Add backend message loading to Home component and update environment …
+
+[33mcommit c22bd3b6754b47f85101b42b1083f6eede9f84b8[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Fri Feb 21 18:15:22 2025 +0000
+
+    update env-file.png
+
+[33mcommit 33a9ead41051f1fbf83c20969907362c66a2e934[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Fri Feb 21 18:11:32 2025 +0000
+
+    update models.py
+
+[33mcommit 08f15f36864562f287b0bb9b3af02d8b05fd234e[m
+Merge: 66bdd8d 68d5095
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Fri Feb 21 14:51:47 2025 -0300
+
+    Merge pull request #3 from monkeyjp/main
+    
+    feat: add BackendURL component and improve env variable handling
+
+[33mcommit 68d50956e7db5d90a85cbfffaed787fc08ad946a[m
+Merge: 6b119bd 66bdd8d
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Fri Feb 21 14:49:12 2025 -0300
+
+    Merge branch 'main' into main
+
+[33mcommit 5936b761bd3376b51c9fa790980e960cc264d17e[m
+Author: Samuel Carmona <samuel.carmona.rodrigz@gmail.com>
+Date:   Fri Feb 21 15:12:01 2025 +0000
+
+    Add backend message loading to Home component and update environment variables example
+
+[33mcommit 66bdd8d90e2156af48eff659275be69e179db8bb[m
+Author: Alejandro Sanchez <aalejo@gmail.com>
+Date:   Thu Feb 20 17:02:28 2025 -0500
+
+    Update README.es.md
+
+[33mcommit c3d8c17b7c6aa4d46cecd75f77c4bd05458fbcb9[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Thu Feb 20 18:36:20 2025 +0100
+
+    Update Footer.jsx
+
+[33mcommit 6b119bde711a65c97f3e0e49bc923f4a8cec30f5[m
+Author: monkeyjp <43521145+monkeyjp@users.noreply.github.com>
+Date:   Thu Feb 20 13:01:54 2025 +0000
+
+    feat: add BackendURL component and improve env variable handling
+    
+    - Added  component to handle missing environment variables.
+    - Updated  to check for  and display  if not set.
+    - Updated  to clarify that frontend env variables use  and must start with .
+    - Modified , changing  to .
+
+[33mcommit 28ef14561427cf3288308097a18d79c17fbf9729[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Wed Feb 19 15:58:17 2025 +0000
+
+    update sqlalchemy
+
+[33mcommit 0d1dadb128830def2e837e705ff11fcc6b72978c[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Wed Feb 19 16:48:22 2025 +0100
+
+    Update package.json
+
+[33mcommit 5274ec31b140d163b7e1cd0bf81ee96d231043b4[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 21:13:59 2025 +0100
+
+    Update README.md
+
+[33mcommit 26b19c2e8fbc829330a58ab0fa51c97131cd1844[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 21:13:27 2025 +0100
+
+    Update README.es.md
+
+[33mcommit f4d860a1bbd37b1f43a15438773d8fba3b9f3399[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 21:12:25 2025 +0100
+
+    Update README.es.md
+
+[33mcommit dbdec45eec7587a688f0a3d9797b266c7b4b25e9[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 21:10:28 2025 +0100
+
+    Update README.es.md
+
+[33mcommit 43c678254c35e10ac57cc280d26a61e1795442fb[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 21:10:04 2025 +0100
+
+    Update README.md
+
+[33mcommit 876f82fecca532f830c218d5c3ee174e7f6235c8[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 17:55:29 2025 +0100
+
+    Update README.md
+
+[33mcommit b821626426bb29d016522e9cff92685efd440a86[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 17:55:04 2025 +0100
+
+    Update README.es.md
+
+[33mcommit 71e815d0edd5cd32f16fe0bd78516b02e42d3a6e[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 17:53:25 2025 +0100
+
+    Update README.es.md
+
+[33mcommit 67ba94b62f26d90e3114cf1403466f64973ff52d[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 17:52:58 2025 +0100
+
+    Update README.md
+
+[33mcommit a1e5cd306ae83e381cc0b80a6d413e886a68a6d9[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 17:32:30 2025 +0100
+
+    Update README.md
+
+[33mcommit 4e6f4b39eff765bcf9c3402efc96a3a5f3af0838[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 17:31:43 2025 +0100
+
+    Update README.es.md
+
+[33mcommit 0b419fe3813dee6fa84855b4611be6f9939289ee[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 18 17:31:10 2025 +0100
+
+    Update README.es.md
+
+[33mcommit 4780ea576caf21a32f34613ce861776136dcd16c[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Wed Feb 12 09:23:58 2025 +0100
+
+    Update learn.json
+
+[33mcommit dfd2ead76360344b78c2d326909a41e1f7346cf7[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 11 21:46:36 2025 +0000
+
+    update preview
+
+[33mcommit 402541fe8db0742e12f883dbc579726d7bdcc0ea[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 11 21:45:17 2025 +0000
+
+    update preview
+
+[33mcommit d90d8a2593e7adccd46c82583ca5ebb2f47a06ed[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 11 21:20:04 2025 +0000
+
+    update
+
+[33mcommit 22e8185d9f17c8cf6722029d97bcb21f2faa8890[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 11 22:15:19 2025 +0100
+
+    Update learn.json
+
+[33mcommit fb273f07e7877dd1d01d70d7cda1023e556f2f7d[m
+Author: Rosinni Rodríguez <43686922+rosinni@users.noreply.github.com>
+Date:   Tue Feb 11 21:11:18 2025 +0000
+
+    created learn.json
+
+[33mcommit 3f9fa31d9454197a0607d20952a3e699d2eebd5f[m
+Author: Shane B. <dotfortun@users.noreply.github.com>
+Date:   Fri Feb 7 19:00:57 2025 -0500
+
+    Added autopep8 and prettier to template.
+
+[33mcommit 3e016a79dfb38532b70bb83b1b33023dc1c9ca43[m
+Author: rosinni <ros.rm169@gmail.com>
+Date:   Thu Feb 6 19:56:19 2025 +0100
+
+    front en
